@@ -1,7 +1,8 @@
 # NCHS-CMS Medicare linkage, 2014-2018
 
+This repo contains documentation and information for the NCHS-CMS Medicare data linkage. More info can be found here: https://www.cdc.gov/nchs/data-linkage/medicare.htm 
 
-**Data sources:**
+## **Data sources:**
 + CMS
   + Medicare enrollment
   + FFS claims
