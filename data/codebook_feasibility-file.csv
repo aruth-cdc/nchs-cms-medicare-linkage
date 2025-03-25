@@ -1,0 +1,47 @@
+﻿Variable name,Variable (VAR) Label,VAR type,VAR length,Range of values,Value Description,Notes
+PUBLICID,Participant Identification Number,Char,14,ID, ,Public use identifier assigned by NCHS.
+,,,,,,"Researchers linking to NHIS public use files (PUF) should use PUBLICID. To merge the NHIS PUF with the Linked NCHS-CMS Medicare NHIS PUF with the Linked NCHS-CMS Medicare Feasibility File, please see notes in the analytic considerations. "
+SEQN,Sample Sequence Number,Num,8,ID, ,"Public use identifier assigned by NCHS. Researchers linking to NHANES III, and 1999-2018 NHANES should use SEQN."
+RESNUM,Resident Record (Case) Number,Num,8,ID, ,Public use identifier assigned by NCHS. Researchers linking to the 2004 NNHS should use RESNUM.
+MEDICARE_MATCH_1418,CMS Medicare Match Status,Num,8,1,Linkage-eligible and linked to one or more years of CMS Medicare administrative data,CMS Medicare Match Status (2014-2018)
+,,,,2,Linkage-eligible and not linked to any year of the CMS Medicare administrative data, 
+,,,,9,Ineligible for CMS linkage or under age 18, 
+ON_MBSF_YYYY,On Master Beneficiary Summary File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the MBSF file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2014-2018
+,,,,1,Linkage-eligible and has data on the MBSF file for a specific year (YYYY), 
+ON_MEDPAR_YYYY,On Medicare Provider Analysis and Review (MedPAR) File,Num,8,0,"Linkage-eligible, but does not have data on the MEDPAR file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the MEDPAR file for a specific year (YYYY), 
+ON_PARTD_PDE_YYYY,On Part D Prescription Drug Event (PDE) File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the PARTD_PDE file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the PARTD_PDE file for a specific year (YYYY), 
+ON_CARRIER_FFS_YYYY,On Professional (Carrier) Fee-for-Service File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the CARRIER_FFS file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the CARRIER_FFS file for a specific year (YYYY), 
+ON_DME_FFS_YYYY,On Durable Medical Equipment Fee-for-Service File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the DME_FFS file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the DME_FFS file for a specific year (YYYY), 
+ON_HHA_FFS_YYYY,On Home Health Agency Fee-for-Service File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the HHA_FFS file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the HHA_FFS file for a specific year (YYYY), 
+ON_HOSPICE_FFS_YYYY,On Hospice File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the HOSPICE_FFS file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the HOSPICE_FFS file for a specific year (YYYY), 
+ON_OUTPAT_FFS_YYYY,On Outpatient Fee-for-Service File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the OUTPAT_FFS file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the OUTPAT_FFS file for a specific year (YYYY), 
+ON_INPAT_FFS_YYYY,On Inpatient Fee-for-Service File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the INPAT_FFS file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the INPAT_FFS file for a specific year (YYYY), 
+ON_SNF_FFS_YYYY,On Skilled Nursing Facility Fee-for-Service File Indicator ,Num,8,0,"Linkage-eligible, but does not have data on the SNF_FFS file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the SNF_FFS file for a specific year (YYYY), 
+ON_OASIS_YYYY,On Home Health Outcome and Assessment Information Set (OASIS) file indicator,Num,8,0,"Linkage-eligible, but does not have data on the OASIS file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the OASIS file for a specific year (YYYY), 
+ON_MDS_YYYY,On Long Term Care Minimum Data Set (MDS) File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the MDS file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage years 2016-2018
+,,,,1,Linkage-eligible and has data on the MDS file for a specific year (YYYY), 
+ON_CARRIER_MA_YYYY,On Professional (Carrier) Medicare Advantage File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the CARRIER_MA file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage year 2016
+,,,,1,Linkage-eligible and has data on the CARRIER_MA file for a specific year (YYYY), 
+ON_DME_MA_YYYY,On Durable Medical Equipment Medicare Advantage File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the DME_MA file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage year 2016
+,,,,1,Linkage-eligible and has data on the DME_MA file for a specific year (YYYY), 
+ON_HHA_MA_YYYY,On Home Health Agency Medicare Advantage File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the HHA_MA file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage year 2016
+,,,,1,Linkage-eligible and has data on the HHA_MA file for a specific year, 
+ON_INPAT_MA_YYYY,On Inpatient Medicare Advantage File,Num,8,0,"Linkage-eligible, but does not have data on the INPAT_MA file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage year 2016
+,,,,1,Linkage-eligible and has data on the INPAT_MA file for a specific year (YYYY), 
+ON_OUTPAT_MA_YYYY,On Outpatient Medicare Advantage File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the OUTPAT_MA file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage year 2016
+,,,,1,Linkage-eligible and has data on the OUTPAT_MA file for a specific year (YYYY), 
+ON_SNF_MA_YYYY,On Skilled Nursing Facility Medicare Advantage File Indicator,Num,8,0,"Linkage-eligible, but does not have data on the SNF_MA file for a specific year (YYYY); or ineligible for the NCHS-CMS Medicare linkage; or under age 18",YYYY represents Medicare coverage year 2016
+,,,,1,Linkage-eligible and has data on the SNF_MA file for a specific year (YYYY), 
+,,,,,,
+,,,,,,
+ , , , , , , 
